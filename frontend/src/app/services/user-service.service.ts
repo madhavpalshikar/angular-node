@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -6,6 +6,8 @@ import { Injectable } from '@angular/core';
 export class UserServiceService {
 
   constructor() { }
+
+  sendMessage = new EventEmitter<string>();
 
   hello(){
     console.log('Hi this is user one');
