@@ -12,12 +12,16 @@ const routes: Routes = [{
   path:'signup',
   component: SignupComponent 
 },{
-  path:'home',
+  path:'home/:id',
   component: HomeComponent
 },
 {
   path:'trash',
   component: TrashComponent
+},
+{
+  path:'logout',
+  component: LoginComponent
 }];
 
 @NgModule({
